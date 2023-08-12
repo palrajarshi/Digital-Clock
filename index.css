@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: "Roboto Slab", serif;
+    color: white;
+    display: flex;
+    /* background-color: green; */
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  body::before {
+    content: "";
+    background: url("images/ray-hennessy-jN5pk0lbv4E-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 75%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  /* Styling Starts here */
+  .container{
+    border-radius: 1rem;
+    height: 16vh;
+    min-height: 7rem;
+    min-width: 34rem;
+    width: 50vw;
+  }
+  .heading{
+    height: 20%;
+    background: rgba(242, 238, 17, 0.8);
+    font-size: 1.5rem;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .time-disp{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .label{
+    background: rgb(107, 67, 187, 80%);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    height: 50%;
+  }
+  .disp-items{
+    display: flex;
+    background: rgba(216, 50, 64, 0.6);
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    height: 100%;
+    width: 33%;
+  }
+  .height50{
+    height: 50%;
+  }
+  .marginTauto{
+    margin-top: auto;
+  }
+  .marginR{
+    margin-right: 0.3rem;
+  }
+  .items{
+    height: 50%;
+  }
+  /* Responsive */
+  @media (max-width: 700px) {
+    .heading{
+        font-size: 1rem;
+    }
+    .disp-items{
+        font-size: 1.5rem;
+    }
+    .container{
+        min-height: 6rem;
+        min-width: 26rem;
+    }
+  }
+  @media (max-width: 520px) {
+    .heading{
+        font-size: 1rem;
+    }
+    .disp-items{
+        font-size: 1.2rem;
+    }
+    .container{
+        min-width: 21rem;
+    }
+  }
+  @media (max-width: 420px) {
+    .heading{
+        font-size: 1rem;
+    }
+    .disp-items{
+        font-size: 1.1rem;
+        line-height: 2.5rem;
+    }
+    .label{
+        line-height: 2.5rem;
+    }
+    .ampmbox{
+        text-align: start;
+    }
+    .container{
+        min-height: 7rem;
+        min-width: 100vw;
+    }
+  }
+  @media (max-width: 329px) {
+    .heading{
+        font-size: 0.8rem;
+    }
+    .disp-items{
+        font-size: 0.95rem;
+    }
+    html,body{
+        overflow: hidden;
+    }
+  }

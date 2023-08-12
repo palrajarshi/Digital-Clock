@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: "Roboto Slab", serif;
+  }
+  /* Utility Classes */
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .font-roboS {
+    font-family: "Roboto Slab", serif;
+  }
+  .width100 {
+    width: 100%;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .font2rem {
+    font-size: 2.7rem;
+  }
+  .bg-pinkish {
+    background: rgba(216, 50, 64, 0.6);
+  }
+  /* CSS Styling Starts here */
+  .container {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .container::before {
+    content: "";
+    background: url("images/ray-hennessy-jN5pk0lbv4E-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 75%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .cont-items {
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: 100%;
+    width: 70%;
+    color: white;
+  }
+  .cont-ampm {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: white;
+    padding-top: 0.1rem;
+    background-color: rgba(175, 84, 227, 0.8);
+    margin-top: auto;
+  }
+  .time-display {
+    font-size: 2rem;
+    height: 15vh;
+    width: 50%;
+  }
+  .heading {
+    color: white;
+    margin: 1rem;
+    font-size: 1.1rem;
+  }
+  /* background: rgb(107, 67, 187, 80%); */
