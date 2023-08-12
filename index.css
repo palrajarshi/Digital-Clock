@@ -108,6 +108,7 @@
     }
     .label{
         line-height: 2.5rem;
+        text-align: center;
     }
     .ampmbox{
         text-align: start;
